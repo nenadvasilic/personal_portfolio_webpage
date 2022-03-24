@@ -1,0 +1,132 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: black;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+  border-right: 1px solid white;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+h1 {
+  color: royalblue;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 55px;
+  padding-top: 180px;
+}
+
+#welcome-section p {
+  text-align: center;
+  font-style: italic;
+  color: royalblue;
+  font-size: 40px;
+}
+
+#projects h2 {
+  text-align: center;
+  color: green;
+  font-size: 40px;
+}
+
+img {
+  width: 45%;
+  height: 45%;
+}
+
+.project-tile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#contact {
+  background-color: orange;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -16px;
+}
+
+#contact h2 {
+  padding-left: 8px;
+  padding-top: 6px;
+}
+
+#contact p {
+  padding-left: 8px;
+  padding-bottom: 12px;
+}
+
+.margin {
+  margin-top: 40px;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: black;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.new-p {
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  #welcome-section p {
+    font-size: 20px;
+  }
+  #projects h2 {
+    font-size: 20px;
+  }
+  .margin {
+    margin-top: 10px;
+  }
+  .margin-s {
+    margin-top: 10px;
+  }
+  img {
+    width: 100%;
+  }
+}
